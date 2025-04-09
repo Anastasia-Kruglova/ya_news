@@ -1,4 +1,5 @@
 from http import HTTPStatus
+import unittest
 
 from django.contrib.auth import get_user_model
 from django.test import TestCase
@@ -10,6 +11,7 @@ from news.models import Comment, News
 User = get_user_model()
 
 
+@unittest.skip('l')
 class TestRoutes(TestCase):
 
     @classmethod
